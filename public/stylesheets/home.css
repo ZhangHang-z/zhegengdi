@@ -1,0 +1,169 @@
+/**
+ * License: GPL, every codes of "xcgqy".
+ * Copyright (c) 2016, Hang Zhang.
+ * Github: https://github.com/ZhangHang-z.
+ */
+
+body {
+    font: 14px/1.7 'Microsoft YaHei','Helvetica Neue',arial,sans-serif,'Hiragino Sans GB',Tahoma;
+    background-color: #F6F6F6
+}
+
+body, div, p, a, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6,
+form, input, textarea, select, button, th, td { margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+
+
+/* 顶部信息栏 */
+#top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #F2F2F2;
+}
+
+
+/* Logo & 主体搜索框 */
+#header {
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+/* 主体搜索框 */
+#main-search-area {
+    width: 500px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#main-search {
+    width: 400px;
+    height: 35px;
+    border: 2px solid #CD0000;
+    padding: 0px 7px;
+    outline: medium;
+    float: left;
+    background-color: #F0F0F0;
+    color: #B5B5B5;
+}
+
+#main-search::-webkit-input-placeholder {
+    color: #B5B5B5;
+}
+/* IE10使用伪类 */
+#main-search:-ms-input-placeholder {
+    color: #B5B5B5;
+}
+/* Mozilla Firefox 4-18 使用伪类 */
+#main-search::-moz-placeholder {
+    color: #B5B5B5;
+}
+/* Mozilla Firefox 19+ 使用伪元素  */
+#main-search:-moz-placeholder {
+    color: #B5B5B5;
+}
+
+
+#main-click-s {
+    padding: 0 20px;
+    height: 35px;
+    background-color: #CD0000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    float: left;
+}
+
+
+/* 全局导航 */
+#global-nav-lay {
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #fff;
+}
+
+#global-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.g-nav-list {
+    display: inline-block;
+}
+
+.g-nav-list a {
+    padding: 0 15px;
+    font-size: 16px;
+    color: #030303;
+}
+
+.g-nav-list a:hover {
+    color: #CD2626;
+}
+
+
+/* 主体部分 */
+#main-lay {
+    width: 100%;
+    border-top: 2px solid #FF464E;
+}
+
+#main {
+    width: 90%;
+    height: auto;
+    background-color: cadetblue;
+    margin: auto;
+}
+
+#commodity-class-select-area {
+    height: auto;
+}
+
+#commodity-class-select-area:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+/* 分类栏目 */
+#commodity-select {
+    width: 170px;
+    background-color: #fff;
+    float: left;
+}
+
+.como-sele-internal {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.ever-como-sele {
+    width: 100%;
+    height: 49px;
+    font-size: 0;
+    border-bottom: 1px dotted #CCC;
+}
+
+.go-como {
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    font-size: 15px;
+    color: #919191;
+    text-align: center;
+    line-height: 49px;
+}
+
+.commo-icon {
+    font-size: 15px;
+}
+
+.go-como:hover {
+    color: #FF464E;
+}
+
