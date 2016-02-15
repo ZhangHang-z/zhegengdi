@@ -1,7 +1,19 @@
 {
   "name": "xcgqy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ZhangHang-z/zhegengdi/issues",
+    "email": "stevezhang2014@gmail.com"
+  },
+  "homepage": "",
+  "keywords": "",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhangHang-z/zhegengdi.git"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -14,5 +26,10 @@
     "serve-favicon": "~2.3.0",
     "ejs": "~2.4.1",
     "mongoose": "~4.4.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.12.0",
+    "grunt-contrib-uglify": "^0.11.1"
   }
 }

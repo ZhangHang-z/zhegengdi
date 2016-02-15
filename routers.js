@@ -12,14 +12,12 @@ var router= express.Router();
 
 exports = module.exports = router;
 
-// the routes of home page
+// 主页路由
 var home = require('./controllers/home');
-
 
 router.get('/', home.home);
 
 
 
 // 管理员路由
-
 var admin = require('./controllers/admin_home.js')
