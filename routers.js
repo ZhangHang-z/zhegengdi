@@ -18,3 +18,8 @@ var home = require('./controllers/home');
 
 router.get('/', home.home);
 
+
+
+// 管理员路由
+
+var admin = require('./controllers/admin_home.js')
