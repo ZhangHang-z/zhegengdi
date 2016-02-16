@@ -20,4 +20,15 @@ router.get('/', home.home);
 
 
 // 管理员路由
-var admin = require('./controllers/admin_home.js')
+var admin = require('./controllers/admin.js')
+
+router.get('/admin', admin.home)
+
+router.get('/login', function login(req, res) {
+  res.render('login.ejs');
+});
+
+
+router.post('/authenticate', admin.login);
+
+router.get('/admin/createUser', admin.createUser);

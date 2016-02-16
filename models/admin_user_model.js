@@ -19,6 +19,8 @@ var adminUserSchema = new mongoose.Schema({
 		u_id: { type: String, required: true, default: Date.now },
 	},
 	create_time: { type: Date, required:true, default: Date.now },
+	name: { type: String, default: '请输入您的姓名' }，
+	comment: String
 
 });
 

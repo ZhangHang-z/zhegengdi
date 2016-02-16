@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="/javascripts/react-0.14.7/build/react.min.js"></script>
+    <script type="text/javascript" src="/javascripts/react-0.14.7/build/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.3.0/css/font-awesome.css" />
+    <script type="text/babel" src="/javascripts/admin/admin_home_page.js"></script>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/admin/admin_home.css" />
+    <meta name="copyright" content="xxx.com">
+    <title>管理员后台 - zhegengdi.com</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div id="nav-wrapper">
+      <div id="logo">
+        <a href="/admin"><i class="fa fa-home nav-icon"></i></a>
+      </div>
+        
+      <div id="nav-right-wrapper">
+        <ul id="quick-create">
+          <li><a href="#" ><i class="fa fa-cog nav-icon1"></i>创建商品</a></li>
+          <li><a href="#"><i class="fa fa-cog nav-icon1"></i>修改广告</a></li>
+          <li><a href="#"><i class="fa fa-cog nav-icon1"></i>用户</a></li>
+        </ul>
+        <div id="login-area">
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header> 
+
+<div id="main-wrap">
+  <div id="main">
+    <div id="left-side-bar">
+      <ul>
+      <li class="sb-ever side-search"><input type="text"></input></li>
+        <li class="sb-ever"><a href="#">创建商品<i class="fa fa-angle-right side-icon"></i></a></li>
+        <li class="sb-ever"><a href="#">修改商品<i class="fa fa-angle-right side-icon"></i></a></li>
+        <li class="sb-ever"><a href="#">修改广告/首页推荐<i class="fa fa-angle-right side-icon"></a></i></li>
+        <li class="sb-ever"><a href="/admin/createUser">用户管理<i class="fa fa-angle-right side-icon"></i></a></li>
+      </ul>
+    </div>
+
+    <div id="right-area">
+      <%- body %>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
