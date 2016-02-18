@@ -1,5 +1,5 @@
 /**
- * License: GPL, every codes of "xcgqy".
+ * License: GPL, every codes of zhegengdi.com.
  * Copyright (c) 2016, Hang Zhang.
  * Github: https://github.com/ZhangHang-z.
  */
@@ -22,7 +22,7 @@ router.get('/', home.home);
 // 管理员路由
 var admin = require('./controllers/admin.js')
 
-router.get('/admin', admin.home)
+router.get('/admin', admin.home);
 
 router.get('/login', function login(req, res) {
   res.render('login.ejs');
@@ -32,3 +32,5 @@ router.get('/login', function login(req, res) {
 router.post('/authenticate', admin.login);
 
 router.get('/admin/createUser', admin.createUser);
+
+router.post('/admin/create_user_submit', admin.newUserSubmit);

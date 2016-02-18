@@ -12,7 +12,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routers');
-var users = require('./routes/users');
+
 
 var config = require('./config.js');
 
@@ -39,7 +39,7 @@ if (config.development) {
 
 
 app.use('/', routes);
-app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

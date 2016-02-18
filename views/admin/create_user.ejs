@@ -1,4 +1,107 @@
-<link type="text/css" rel="stylesheet" href="/stylesheets/admin/admin_crateuser.css" />
-<div>
-  zddddddddddddddddddd
-</div>
+<style type="text/css">
+	#create-user-area {
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	#bar-title {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.title-sty {
+		font-weight: 400;
+	}
+
+	.ever-input-area {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	.ever-input-area:after {
+		content: "";
+		display: block;
+		clear: both
+	}
+
+	#user-form {
+		margin-top: 30px;
+	}
+
+	.single-label {
+		margin-right: 40px;
+		display: inline-block;
+		width: 100px;
+	}
+
+	.single-input {
+		display: inline-block;
+		width: 200px;
+		padding: 5px 10px;
+	}
+
+	.indispensable {
+		color: red;
+		position: absolute;
+		left: 135px;
+	}
+
+	.submit-butt {
+		margin: 20px 0px 20px 200px;
+		width: 100px;
+		height: 30px;
+		cursor: pointer;
+	}
+</style>
+
+<section id="create-user-area">
+	<header id="bar-title">
+		<h1 class="title-sty">创建新的管理员账户</h1>
+	</header>
+
+	<form method="post" action="/admin/create_user_submit" id="user-form">
+		<div class="ever-input-area">
+			<label for="i-account" class="single-label">账户</label>
+			<i class="indispensable">*</i>
+			<input class="single-input" type="text" name="account" id="i-account">
+		</div>
+		<div class="ever-input-area">
+			<label for="i-password" class="single-label">密码</label>
+			<i class="indispensable">*</i>
+			<input class="single-input" type="password" name="password" id="i-password">
+		</div>
+
+		<div class="ever-input-area">
+			<label for="i-mobile" class="single-label">手机号</label>
+			<i class="indispensable">*</i>
+			<input class="single-input" type="text" name="mobile" id="i-mobile">
+		</div>
+
+		<div class="ever-input-area">
+			<label for="i-email" class="single-label">邮箱</label>
+			<input class="single-input" type="text" name="email" id="i-email">
+		</div>
+
+		<div class="ever-input-area">
+			<label for="i-name" class="single-label">姓名</label>
+			<i class="indispensable">*</i>
+			<input class="single-input" type="text" name="name" id="i-name">
+		</div>
+
+		<div class="ever-input-area">
+			<label for="i-level" class="single-label">权限等级</label>
+			<i class="indispensable">*</i>
+			<select name="level" id="i-level">
+				<option value="1">1:最高司令</option>
+				<option value="2">2:广告权限</option>
+				<option value="3" selected="selected">3:普通发布产品权限</option>
+			</select>
+		</div>
+
+		<button class="submit-butt" type="submit" form="user-form">提交</button>
+
+	</form>
+</section>
