@@ -19,20 +19,18 @@ var home = require('./controllers/home');
 router.get('/', home.home);
 
 
-
 // 管理员路由
-var admin = require('./controllers/admin.js')
+var admin = require('./controllers/admin.js');
 
 router.get('/admin', admin.home);
-
-router.get('/login', function login(req, res) {
-  res.render('login.ejs');
-});
-
-router.get("/authenticate", admin.loginSubmit);
-
-router.post('/authenticate', admin.login);
 
 router.get('/admin/createUser', admin.createUser);
 
 router.post('/admin/create_user_submit', admin.newUserSubmit);
+
+
+// 登录检测路由
+var login = require("./controllers/login.js");
+router.get("/authenticate", login.loginPage);
+
+router.post("/authenticate", login.loginSubmit);

@@ -33,10 +33,6 @@ em {
     font-style: normal;
 }
 
-
-
-
-
 .main-background {
    background-color: #F6F6F6;
 }
@@ -140,7 +136,7 @@ em {
 }
 
 /* 主体处双侧空留区域 */
-#main {
+.main {
     width: 1190px;
     min-width: 1190px;
     margin: auto;
@@ -220,7 +216,7 @@ em {
 /* 轮播图实体 */
 .cycle-poster-pic {
     width: 650px;
-    max-width: 650px
+    max-width: 650px;
     height: 383px;
 }
 
@@ -259,7 +255,7 @@ em {
 /* 首页商品推荐 */
 #home-recommand-area {
     width: 1190px;
-    height: 1000px;
+    height: auto;
     margin-top: 20px;
     font-size: 0px;
 }
@@ -270,7 +266,7 @@ em {
     display: inline-block;
     width: 276px;
     height: auto;
-    margin-right: 26px;
+    margin-right: 18px;
     border: 1px solid #FAFAFA;
     background-color: #fff;
     padding-bottom: 10px;
@@ -369,3 +365,60 @@ em {
     border-radius: 3px;
     margin: 7px 5px 0px 5px;
 }
+
+/* footer */
+footer {
+    width: 100%;
+    min-width: 1190px;
+    height: auto;
+    border-top: 2px solid #FF464E;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.fo-left-info {
+    width: 800px;
+    height: auto;
+    float: left;
+}
+
+.fo-right-info {
+    width: 390px;
+    height: auto;
+    float: right;
+}
+
+.fo-e {
+    width: 100px;
+    padding: 40px 0 30px 0;
+    background-color: #ffffff;
+    border-right: 1px solid #BDBDBD;
+    border-left-color: #C9C9C9;
+    display: inline-block;
+}
+
+.fo-t1 {
+    padding-right: 50px;
+}
+
+.fo-tz {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.fo-title {
+    font-size: 18px;
+    color: #515151;
+}
+
+.fo-e dd a {
+    font-size: 13px;
+    color: #636363;
+}
+

@@ -16,27 +16,7 @@ exports.home = function (req, res) {
   res.render('admin/admin_lay.ejs', { body: '主页' });
 };
 
-exports.login = function login (req, res) {
-  var account = req.body['account'];
-  var password = req.body['password'];
-};
 
-
-exports.loginSubmit = function loginSubmit (req, res) {
-  var account = req.body["account"];
-  var password = req.body["password"];
-
-  adminUserModel.find({ account: account }, function (err, doc) {
-    if (err) {
-      return console.log(err);
-    } else {
-      if (doc) {
-        console.log("sasasa");
-        console.log(doc);
-      }
-    }
-  });
-};
 
 exports.createUser = function createUser(req, res) {
   var create_user_text = fs.readFileSync(mySys.getUserHome() +
